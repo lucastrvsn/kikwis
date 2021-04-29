@@ -50,4 +50,4 @@ TODO
 
 ### Inspiration
 
-This theme is inspired on [gruvbox](https://github.com/morhetz/gruvbox) and on colors from The Legend of Zelda's Kikwi race.
+This theme is inspired on [gruvbox](https://github.com/morhetz/gruvbox) and on colors from [The Legend of Zelda's Kikwi](https://zelda.fandom.com/wiki/Kikwi) race.
