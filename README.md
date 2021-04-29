@@ -1,6 +1,6 @@
 ## kikwis
 
-kikwis is a calm colorscheme with bright colors. The main focus is right the colors and support tree-sitter and neovim built-in lsp.
+kikwis is a calm colorscheme with a nice balance of colors. The main focus is right the colors and support tree-sitter and neovim built-in lsp. This colorscheme is not complete, expect some changes in the future.
 
 ![screenshot](https://github.com/lucastrvsn/kikwis/raw/master/assets/screenshot.png)
 
