@@ -1,5 +1,3 @@
-![kikwis](https://user-images.githubusercontent.com/8826449/111629144-ba639300-87cf-11eb-821d-faf63bc29ea5.png)
-
 ## kikwis
 
 kikwis is a calm colorscheme with bright colors. The main focus is right the colors and support tree-sitter and neovim built-in lsp.
@@ -8,25 +6,27 @@ kikwis is a calm colorscheme with bright colors. The main focus is right the col
 
 > In this screenshot, font used is SF Mono (by Apple) and Alacritty terminal.
 
-### Features
-
 - Handpicked colors to make it all good to look at
 - Mid-tone colors with nice constrast between them
-- Full support for treesitter and neovim built-in lsp
+- Full support for `tree-sitter` and neovim built-in lsp
 - Supported plugins: `telescope.nvim`
+
+### Requirements
+
+- Neovim 0.5 nightly with built-in lsp and tree-sitter. You can learn how to install and use it on the [neovim repository](https://github.com/neovim/neovim).
 
 ### Installation
 
 Using [packer](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use { 'lucastrvsn/kikwis.nvim' }
+use { 'lucastrvsn/kikwis' }
 ```
 
 Using [paq](https://github.com/savq/paq-nvim):
 
 ```lua
-paq { 'lucastrvsn/kikwis.nvim' }
+paq { 'lucastrvsn/kikwis' }
 ```
 
 ### Usage
@@ -43,7 +43,11 @@ TODO
 
 ## Related
 
-- alacritty theme: []()
-- kitty theme: []()
+- Alacritty theme: []()
+- Kitty theme: []()
 - iTerm2 theme: []()
-- tmux theme: []()
+- Tmux theme: []()
+
+### Inspiration
+
+This theme is inspired on [gruvbox](https://github.com/morhetz/gruvbox) and on colors from The Legend of Zelda's Kikwi race.
