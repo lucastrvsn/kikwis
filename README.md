@@ -2,7 +2,7 @@
 
 kikwis is a calm colorscheme with bright colors. The main focus is right the colors and support tree-sitter and neovim built-in lsp.
 
-![screenshot](https://user-images.githubusercontent.com/8826449/111538294-467fa700-874b-11eb-8ddb-cdfad9a0a7de.png)
+![screenshot](https://github.com/lucastrvsn/kikwis/raw/master/assets/screenshot.png)
 
 > In this screenshot, font used is SF Mono (by Apple) and Alacritty terminal.
 
