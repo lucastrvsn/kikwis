@@ -41,35 +41,19 @@ local get_attributes_from_group = function(group)
 end
 
 local create_highlight = function(group, opts)
-  local fg = opts.fg or nil
-  local bg = opts.bg or nil
-  local bold = opts.bold or nil
-  local standout = opts.standout or nil
-  local underline = opts.underline or nil
-  local undercurl = opts.undercurl or nil
-  local italic = opts.italic or nil
-  local reverse = opts.reverse or nil
-  local default = opts.default or nil
-  local global = opts.global or nil
+  local fg = opts.fg or 'NONE'
+  local bg = opts.bg or 'NONE'
+  local gui = opts.gui or 'NONE'
 
   M._highlights[group] = opts
 
-  return {
-    group = group,
-    opts = {
-      fg = opts.fg or nil,
-      bg = opts.bg or nil,
-      bold = opts.bold or false,
-      standout = opts.standout or false,
-      underline = opts.underline or false,
-      undercurl = opts.undercurl or false,
-      italic = opts.italic or false,
-      -- TODO: How this even work?
-      -- reverse = opts.reverse or false,
-      default = opts.default or false,
-      global = opts.global or false
-    }
-  }
+  return string.format(
+    'highlight %s guifg=%s guibg=%s gui=%s',
+    group,
+    fg,
+    bg,
+    gui
+  )
 end
 
 local create_highlight_link = function(group, link, opts)
@@ -81,12 +65,11 @@ local create_highlight_link = function(group, link, opts)
 
   M._highlights[group] = link
 
-  return {
-    group = group,
-    opts = {
-      link = link
-    }
-  }
+  return string.format(
+    'highlight! link %s %s',
+    group,
+    link
+  )
 end
 
 M.highlight = function(...)
